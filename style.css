@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 /*menu*/
 nav {
     height: 50px;
@@ -20,7 +28,6 @@ span {
 .active {
     display: block;
 }
-
 
 menu {
     float: right;
@@ -61,6 +68,7 @@ menu::after {
     height: 100vh;
     width: 100vw;
     padding-top: 55px;
+    overflow: hidden;
 }
 
 .prod {
@@ -211,6 +219,8 @@ menu::after {
 #plans {
     height: 100vh;
     width: 100vw;
+    background-color: #0fa766;
+    overflow: hidden;
 }
 
 .plans-container {
@@ -222,7 +232,7 @@ menu::after {
 
 #plans h3 {
     font-family: 'Amatic SC', cursive;
-    color: #a70f50;
+    color: #fff;
     font-size: 3.5em;
     text-align: center;
     padding: 15px;
@@ -241,7 +251,7 @@ menu::after {
     font-weight: bold;
     letter-spacing: 3px;
     text-align: center;
-    color: #0fa766;
+    color: #555;
 }
 
 .box {
@@ -249,18 +259,20 @@ menu::after {
     width: 25%;
     margin: 10px;
     padding: 10px;
-    background-color: #eeebeb;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: space-around;
     border-radius: 5px;
+
 }
 
 .box p {
     font-family: 'Muli SC', sans-serif;
-    font-size: 1em;
-    color: #777;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    color: #999;
     text-align: justify;
     margin: 15px 5px 15px 5px;
 
@@ -268,8 +280,10 @@ menu::after {
 
 .box h5 {
     font-family: 'Muli SC', sans-serif;
-    color: #555;
-    font-size: 1em;
+    color: #0fa766;
+    font-size: 0.9em;
+    line-height: 15px;
+    letter-spacing: 3px;
     text-align: justify;
 
 }
@@ -277,7 +291,7 @@ menu::after {
 button {
     height: 30px;
     width: 100%;
-    background-color: #0fa766;
+    background-color: #a70f50;
     box-shadow: 0px 2px 2px 2px #eeebeb;
     font-family: 'Amatic SC', cursive;
     color: #ffff;
@@ -291,11 +305,11 @@ button {
 #about {
     height: 100vh;
     width: 100vw;
-    background-color: #0fa766;
+    overflow: hidden;
 }
 
 #about h3 {
-    color: #fff;
+    color: #0fa766;
     font-family: 'Amatic SC', cursive;
     font-size: 3.5em;
     text-align: center;
@@ -304,61 +318,157 @@ button {
 
 .about-us {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .about-him,
 .about-her {
     width: 45%;
     height: 70%;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
+    justify-content: center;
+    margin: 30px;
 }
 
 .about-header {
     height: 150px;
+    width: 70%;
+    padding: 50px;
+    text-align: center;
 }
 
 .about-description {
     width: 100%;
     height: 50%;
     font-family: 'Muli SC', sans-serif;
-    font-size: 1em;
-    color: #eeebeb;
+    letter-spacing: 1px;
+    font-size: .9em;
+    line-height: 2em;
+    color: #999;
+    text-align: justify;
+    margin: 10px;
 }
 
 
 .about-header h4 {
     font-family: 'Muli SC', sans-serif;
-    color: #eeebeb;
-    font-size: 1.5em;
+    color: #a70f50;
+    font-size: 2em;
     text-align: center;
     letter-spacing: 3px;
 
 }
 
+.about-header h6 {
+    font-family: 'Amatic SC', cursive;
+    color: #777;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
 .about-pic {
-    width: 150px;
+    width: 25%;
     height: 150px;
     border-radius: 50%;
     border: 2px solid #eeebeb;
 }
 
+.about-social {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    letter-spacing: 10px;
+}
 
-
+.about-social a {
+    color: #777;
+}
 
 /* contact */
 #contact {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contact h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5em;
+    color: #0fa766;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Muli SC', sans-serif;
+    font-size: 1em;
+    color: #777;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 80%;
+    height: 25px;
+    margin: 5px;
+}
+
+textarea {
+    width: 80%;
+    height: 50%;
+    resize: none;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+}
+
+.social {
+    width: 30%;
+    height: 70%;
+    text-align: center;
+}
+
+.social h4 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    color: #999;
+    letter-spacing: 3px;
+}
+
+.social a {
+    font-size: 2em;
+    color: #a70f50;
+    letter-spacing: 10px;
+    margin-top: 25px;
+}
+
+.social a:visited {
+    color: #0fa766;
 }
 
 /*footer*/
 footer {
-    height: 150px;
-    background-color: #eeebeb;
-
+    height: 200px;
+    width: 100%;
+    background-color: #0fa766;
+    overflow-y: hidden;
 }
