@@ -12,17 +12,25 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    height: 100vh;
+
+}
+
 /*menu*/
 nav {
     height: 50px;
     padding: 10px;
+    width: 100%;
     /* border-bottom: 1px solid #999; */
+    background-color: #fff;
 }
 
 span {
     color: #999;
     font-size: 1.5em;
     cursor: pointer;
+    position: fixed;
 }
 
 .active {
@@ -32,6 +40,9 @@ span {
 menu {
     float: right;
     display: none;
+    position: fixed;
+    right: 20px;
+    background-color: #fff;
 }
 
 menu ul li {
@@ -191,27 +202,6 @@ menu::after {
     color: #999;
     font-size: 0.9em;
     text-align: justify;
-}
-
-
-.arrow {
-    display: inline-block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    text-indent: -9999px;
-    border-top: 2px solid #bfbfbf;
-    border-left: 2px solid #bfbfbf;
-    transition: all 250ms ease-in-out;
-    text-decoration: none;
-    text-align: center;
-    color: transparent;
-}
-
-.arrow.down {
-    transform: rotate(-135deg);
-    right: 50%;
 }
 
 /*plans*/
@@ -391,6 +381,7 @@ button {
 
 /* contact */
 #contact {
+    min-height: calc(100vh - 250px);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -467,8 +458,11 @@ textarea {
 
 /*footer*/
 footer {
-    height: 200px;
+    height: 100px;
     width: 100%;
     background-color: #0fa766;
-    overflow-y: hidden;
+    color: #eeebeb;
+    font-family: 'Muli SC', sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 2px;
 }
