@@ -255,7 +255,6 @@ menu::after {
     justify-content: space-evenly;
     align-content: space-around;
     border-radius: 5px;
-
 }
 
 .box p {
@@ -276,6 +275,14 @@ menu::after {
     letter-spacing: 3px;
     text-align: justify;
 
+}
+
+.box-active {
+    opacity: 1;
+}
+
+.box-inactive {
+    opacity: 0.5;
 }
 
 button {
