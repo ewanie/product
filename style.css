@@ -209,7 +209,7 @@ menu::after {
 #plans {
     height: 100vh;
     width: 100vw;
-    background-color: #0fa766;
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -222,7 +222,7 @@ menu::after {
 
 #plans h3 {
     font-family: 'Amatic SC', cursive;
-    color: #fff;
+    color: #a70f50;
     font-size: 3.5em;
     text-align: center;
     padding: 15px;
@@ -239,9 +239,9 @@ menu::after {
     text-transform: uppercase;
     font-size: 2.5em;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-align: center;
-    color: #555;
+    color: #fff;
 }
 
 .box {
@@ -249,10 +249,10 @@ menu::after {
     width: 25%;
     margin: 10px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #0fa766;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: space-around;
     border-radius: 5px;
 }
@@ -260,20 +260,10 @@ menu::after {
 .box p {
     font-family: 'Muli SC', sans-serif;
     font-size: 0.9em;
-    letter-spacing: 2px;
-    color: #999;
+    letter-spacing: 1px;
+    color: #ebebeb;
     text-align: justify;
-    margin: 15px 5px 15px 5px;
-
-}
-
-.box h5 {
-    font-family: 'Muli SC', sans-serif;
-    color: #0fa766;
-    font-size: 0.9em;
-    line-height: 15px;
-    letter-spacing: 3px;
-    text-align: justify;
+    /* margin: 15px 5px 15px 5px; */
 
 }
 
@@ -289,12 +279,11 @@ button {
     height: 30px;
     width: 100%;
     background-color: #a70f50;
-    box-shadow: 0px 2px 2px 2px #eeebeb;
     font-family: 'Amatic SC', cursive;
     color: #ffff;
     font-weight: bold;
     font-size: 1.5em;
-    left: 50%;
+    margin: 15px 0px 10px 0px;
 
 }
 
@@ -388,7 +377,7 @@ button {
 
 /* contact */
 #contact {
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 100px);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -468,6 +457,7 @@ footer {
     width: 100%;
     background-color: #0fa766;
     color: #eeebeb;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
@@ -494,6 +484,7 @@ footer {
 .footer-social {
     margin: 10px;
     padding: 20px;
+    letter-spacing: 5px;
 }
 
 .footer-social a {
